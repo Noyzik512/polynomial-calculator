@@ -47,7 +47,6 @@ Below is an example of interacting with the program in the terminal. The first l
 + 2x^2 + 3x - 1
 2x^2 + 3x - 1
 * 3x
-
 6x^3 + 9x^2 - 3x
 + -5x^2 + 2
 6x^3 + 4x^2 - 3x + 2
