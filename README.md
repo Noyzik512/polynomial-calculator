@@ -1,5 +1,5 @@
 # kalkulator-wielomianow
-kalkulator liczący sumę i iloczyn wielomianów o współczynnikach całkowitych.
+Kalkulator liczący sumę i iloczyn wielomianów o współczynnikach całkowitych.
 
 Kalkulator ma pamięć, nazywaną akumulatorem, która przechowuje jeden wielomian. Wartością początkową akumulatora jest wielomian zerowy.
 
