@@ -4,9 +4,11 @@ A command-line calculator written in C that calculates the sum and product of po
 
 ## 📝 About The Project
 
-This calculator features a built-in memory register called the **accumulator**, which stores a single polynomial. The initial value of the accumulator is always a zero polynomial. 
+This calculator reads a polynomial (up to the 10th degree) and performs addition and multiplication operations. It features a built-in memory register called the **accumulator**, which stores a single polynomial. The initial value of the accumulator is always a zero polynomial.
 
-The program executes commands to compute either the sum or the product of the accumulator's current value and a polynomial provided as an argument. After each operation, the calculator outputs the result and automatically saves it back into the accumulator for future calculations.
+The program reads a mathematical operation (`+` for addition, `*` for multiplication) followed by a polynomial in a single line. It executes the command, computing the result using the accumulator's current value and the polynomial provided as an argument. After each operation, the calculator outputs the result and saves it back into the accumulator. The program stops execution when it detects a dot (`.`) as the input.
+
+*Author: Bartosz Kościołek*
 
 ## 🛠️ Built With
 
@@ -25,5 +27,26 @@ You need a C compiler (like GCC) installed on your system.
 
 Open your terminal and compile the code using the following command:
 
-```bash
-gcc kalkulator.c -o kalkulator
+`gcc kalkulator.c -o kalkulator`
+
+### Execution
+
+Run the compiled program:
+
+**On Linux/macOS:**
+`./kalkulator`
+
+**On Windows:**
+`kalkulator.exe`
+
+## 💡 Example Usage
+
+Below is an example of interacting with the program in the terminal. The first line is the user input (operation and polynomial), and the second line is the program's output (current accumulator state).
+
++ 2x^2 + 3x - 1
+2x^2 + 3x - 1
+* 3x
+6x^3 + 9x^2 - 3x
++ -5x^2 + 2
+6x^3 + 4x^2 - 3x + 2
+.
